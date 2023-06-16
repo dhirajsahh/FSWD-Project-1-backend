@@ -1,0 +1,15 @@
+const router = require("express").Router();
+const CreateUser = require("../Controller/CreateUser");
+const CreateTodo = require("../Controller/CreateTodo");
+const UserLogin = require("../Controller/UserLogin");
+const getTodo = require("../Controller/getTodo");
+const AddingTodo = require("../Controller/AddingTodo");
+const updateTodo = require("../Controller/updatingTodo");
+const deleteTodo = require("../Controller/deletingTodo");
+router.use("/createuser", CreateUser);
+router.use("/createtodo", CreateTodo);
+router.use("/userlogin", UserLogin);
+router.use("/gettodo", getTodo);
+router.use("/updatetodo", updateTodo);
+router.use("/deletetodo", deleteTodo);
+module.exports = router;
